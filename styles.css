@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #562eff;
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 285px;
+}
+
+.logo h3 {
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 285px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+
+.container {
+  width: 870px;
+
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 29px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+}
+.player h3 {
+  font-size: 18px;
+  margin: 16px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 27px;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+.blog-info {
+  margin-left: 16px;
+}
+.blog-title {
+  font-size: 20px;
+}
+.blog-author {
+  color: #9f9f9f;
+  font-size: 16px;
+}
+.blog-author a {
+  text-decoration: none;
+  font-size: 16px;
+  font-size: 16px;
+  color: #562eff;
+}
+.thumbnail img {
+  width: 117px;
+  height: 117px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+
+.course {
+  padding: 16px;
+  width: 237px;
+  box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+
+.course-banner img {
+  width: 100%;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
