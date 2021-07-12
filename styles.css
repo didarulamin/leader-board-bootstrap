@@ -10,23 +10,22 @@ main {
   align-items: center;
 }
 
-.navbar {
+/* .navbar {
   background-color: #562eff;
   height: 94px;
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.logo {
+/* .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative;
-  left: 285px; */
+ 
   margin-left: 15vw;
-}
+} */
 
-.logo h3 {
+/* .logo h3 {
   color: white;
   margin: 5px;
   padding: 5px;
@@ -35,14 +34,61 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
+ 
   margin-right: 15vw;
+} */
+
+/* .nav-menu a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+} */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+.navbar {
+  display: flex;
+  width: 920px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.logo {
+  width: 100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  /* width: 300px; */
+
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .nav-menu a {
   text-decoration: none;
+  margin: 10px;
   color: white;
-  margin: 20px;
+}
+
+#logo-text {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.user-img {
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .container {
@@ -140,17 +186,19 @@ hr {
 }
 
 @media only screen and (max-width: 688px) {
-  .container {
+  .header {
     width: 100%;
   }
   .navbar {
-    width: 100%;
+    width: 80%;
   }
 
   .players,
   .blogs,
   .courses {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-left: 0;
   }
   .player,
   .blog {
@@ -158,30 +206,43 @@ hr {
     align-items: center;
   }
 
-  .course {
+  /* .course {
     margin-left: 50px;
-  }
+  } */
   .section-title {
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+  .navbar {
+    width: 88%;
+  }
+
   .container {
     width: 100%;
   }
-  .players,
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    width: 80%;
+  }
   .courses {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 50px;
+    grid-column-gap: 5px;
+    justify-items: center;
   }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 50px;
+    justify-items: center;
   }
 
   .course {
-    margin-left: 50px;
+    margin-right: 10px;
   }
   .section-title {
     text-align: center;
