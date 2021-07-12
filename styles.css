@@ -164,3 +164,25 @@ hr {
     text-align: center;
   }
 }
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 50px;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 50px;
+  }
+
+  .course {
+    margin-left: 50px;
+  }
+  .section-title {
+    text-align: center;
+  }
+}
