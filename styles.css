@@ -21,8 +21,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: 285px;
+  /* position: relative;
+  left: 285px; */
+  margin-left: 15vw;
 }
 
 .logo h3 {
@@ -34,8 +35,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  right: 285px;
+  /* position: relative; */
+  margin-right: 15vw;
 }
 
 .nav-menu a {
@@ -185,4 +186,19 @@ hr {
   .section-title {
     text-align: center;
   }
+}
+
+.course-duration {
+  background-color: #ffe4e8;
+  border-radius: 14px;
+  width: 95px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.course-duration p {
+  display: inline;
+  padding: 2px;
 }
