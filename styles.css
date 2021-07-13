@@ -51,10 +51,9 @@ header {
 
 .navbar {
   display: flex;
-  width: 920px;
+  width: 930px;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
 }
 
 .logo {
@@ -101,6 +100,9 @@ header {
   padding: 30px;
 }
 
+.top-player {
+  margin-bottom: 70px;
+}
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -193,6 +195,10 @@ hr {
     width: 80%;
   }
 
+  .container {
+    width: 60%;
+  }
+
   .players,
   .blogs,
   .courses {
@@ -222,9 +228,9 @@ hr {
     width: 88%;
   }
 
-  .container {
+  /* .container {
     width: 100%;
-  }
+  } */
   .players {
     grid-template-columns: repeat(2, 1fr);
   }
