@@ -1,0 +1,26 @@
+.fa-star {
+  font-size: 16px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+
+hr {
+  padding: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* .navbar-dark {
+  color: white !important;
+} */
+a {
+  color: white;
+}
+
+li > a {
+  color: white !important;
+}
